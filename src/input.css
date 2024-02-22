@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.circle {
+  @apply w-8 aspect-square rounded-full bg-[#c12efe] absolute top-0 -translate-y-1/2;
+}
+
+.last {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2)
+}
