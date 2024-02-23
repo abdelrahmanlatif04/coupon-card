@@ -1,5 +1,4 @@
-var frontFace = document.querySelector(".front");
-var backFace = document.querySelector(".back");
+var card = document.querySelector(".card");
 var getCouponBtn = document.querySelector("#get-coupon-btn");
 var returnBtn = document.querySelector("#return");
 getCouponBtn.addEventListener("click", () => {
@@ -11,6 +10,8 @@ returnBtn.addEventListener("click", () => {
 });
 
 function flipFaces() {
-  frontFace.classList.toggle("hidden");
-  backFace.classList.toggle("hidden");
+  card.style.transform =
+    card.style.transform == `rotateY(180deg)`
+      ? `rotateY(0deg)`
+      : `rotateY(180deg)`;
 }

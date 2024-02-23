@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../src/output.css" />
   </head>
   <body class="bg-[#c12efe]">
-    <div class="body w-[420px] mx-auto mt-16">
+    <div class="body w-[420px] mx-auto mt-16 relative">
       <div class="flex justify-between items-center mb-6">
         <p class="text-white md:text-2xl text-xl font-bold">
           Video Games Store
@@ -16,62 +16,64 @@
           class="aspect-square border border-white bg-white rounded-sm w-12 bg-opacity-20 bg-[url('../imgs/share.svg')] bg-no-repeat bg-[50%] bg-[length:60%] cursor-pointer"
         ></div>
       </div>
-      <div
-        class="front w-full rounded-t-xl relative overflow-hidden bg-white"
-      >
-        <img class="w-full" src="../imgs/main.svg" />
-        <img
-          class="absolute right-7 -translate-y-1/2"
-          src="../imgs/discount.svg"
-        />
-        <p class="text-2xl font-semibold ml-6 mt-10 mb-2">25% OFF</p>
-        <p class="text-lg mx-6 text-[#767C83] mb-10">
-          Available on all our product for a limited time only!
-        </p>
-        <div class="relative border-t-[3px] border-dashed border-[#c12efe]">
-          <div class="circle left-0 -translate-x-1/2"></div>
-          <div class="circle right-0 translate-x-1/2"></div>
-          <button
-            id="get-coupon-btn"
-            class="bg-[#eded4f] w-[388px] mb-8 mt-12 py-4 mx-4 text-xl rounded-md hover:opacity-85"
-          >
-            GET COUPON
-          </button>
+      <div class="card absolute h-full w-full transition-all duration-[800ms]">
+        <div class="front  w-full rounded-xl absolute overflow-hidden bg-white">
+          <img class="w-full" src="../imgs/main.svg" />
+          <img
+            class="absolute right-7 -translate-y-1/2"
+            src="../imgs/discount.svg"
+          />
+          <p class="text-2xl font-semibold ml-6 mt-10 mb-2">25% OFF</p>
+          <p class="text-lg mx-6 text-[#767C83] mb-10">
+            Available on all our product for a limited time only!
+          </p>
+          <div class="relative border-t-[3px] border-dashed border-[#c12efe]">
+            <div class="circle left-0 -translate-x-1/2"></div>
+            <div class="circle right-0 translate-x-1/2"></div>
+            <button
+              id="get-coupon-btn"
+              class="bg-[#eded4f] w-[388px] mb-8 mt-12 py-4 mx-4 text-xl rounded-md hover:opacity-85"
+            >
+              GET COUPON
+            </button>
+          </div>
         </div>
-      </div>
 
-      <div class="back hidden relative bg-white rounded-xl text-center">
-        <p class="pt-8 text-lg text-[#767]">Coupon code</p>
-        <img class="w-[95%] mx-auto" src="../imgs/code.jpg" />
-        <img
-        id="return"
-          class="w-6 absolute right-2 top-2 rotate-180 cursor-pointer"
-          src="../imgs/refresh-outline.svg"
-        />
-        <div class="flex w-[388px] mx-4 gap-2 mb-5 justify-center items-center">
-          <img src="../imgs/time-outline.svg" class="w-6" />
-          <p class="text-[#767] text-sm">Valid until Aug 19, 2023</p>
-        </div>
-        <p class="mt-6 mb-8 text-[#767] text-lg">Terms and Conditions</p>
-        <div
-          class="lower-section relative border-t-[3px] border-dashed border-[#c12efe]"
-        >
-          <div class="circle left-0 -translate-x-1/2"></div>
-          <div class="circle right-0 translate-x-1/2"></div>
-          <button
-            class="bg-[#eded4f] w-[388px] my-8 py-4 mx-4 text-xl rounded-md hover:opacity-85"
+        <div class="back  absolute bg-white rounded-xl text-center">
+          <p class="pt-8 text-lg text-[#767]">Coupon code</p>
+          <img class="w-[95%] mx-auto" src="../imgs/code.jpg" />
+          <img
+            id="return"
+            class="w-6 absolute right-2 top-2 rotate-180 cursor-pointer"
+            src="../imgs/refresh-outline.svg"
+          />
+          <div
+            class="flex w-[388px] mx-4 gap-2 mb-5 justify-center items-center"
           >
-            Our website
-          </button>
-          <button
-            class="last mb-4 py-4 w-[388px] mx-4 text-xl rounded-md hover:opacity-50"
+            <img src="../imgs/time-outline.svg" class="w-6" />
+            <p class="text-[#767] text-sm">Valid until Aug 19, 2023</p>
+          </div>
+          <p class="mt-6 mb-8 text-[#767] text-lg">Terms and Conditions</p>
+          <div
+            class="lower-section relative border-t-[3px] border-dashed border-[#c12efe]"
           >
-            See Location
-          </button>
+            <div class="circle left-0 -translate-x-1/2"></div>
+            <div class="circle right-0 translate-x-1/2"></div>
+            <button
+              class="bg-[#eded4f] w-[388px] my-8 py-4 mx-4 text-xl rounded-md hover:opacity-85"
+            >
+              Our website
+            </button>
+            <button
+              class="last mb-4 py-4 w-[388px] mx-4 text-xl rounded-md hover:opacity-50"
+            >
+              See Location
+            </button>
+          </div>
+          <p class="absolute w-[388px] mx-4 text-white text-2xl mt-4">
+            Terms and Conditions
+          </p>
         </div>
-        <p class="absolute w-[388px] mx-4 text-white text-2xl mt-4">
-          Terms and Conditions
-        </p>
       </div>
     </div>
     <script src="../js/script.js"></script>
